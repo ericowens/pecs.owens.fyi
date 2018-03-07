@@ -1,4 +1,4 @@
-baseURL = "http://example.com/"
+baseURL = "http://pecs.owens.fyi/"
 languageCode = "en-us"
 title = "Minimal"
 theme = "minimal"
