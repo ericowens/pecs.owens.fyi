@@ -3,6 +3,30 @@
             <p class="copyright text-muted">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Minimal](https://github.com/calintat/minimal)" | markdownify }}</p>
 
         </footer>
+
+        <script>
+
+        	var figures = document.querySelectorAll("figure");
+        	function clickSelect(e) {
+        		console.log(e);
+				for (i = 0; i < figures.length; ++i) {
+					figures[i].classList.remove("selected");
+				}
+				var found = e.path.find(function(element) {
+				  return element.tagName == "FIGURE";
+				});
+
+				found.classList.add("selected");
+
+				var audio = new Audio('/ass.wav');
+				audio.play();
+
+				console.log(found);
+			}
+        	for (i = 0; i < figures.length; ++i) {
+			  figures[i].addEventListener("click", clickSelect, true);
+			}
+        </script>
        
     </body>
 
