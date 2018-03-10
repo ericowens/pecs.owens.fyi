@@ -6,22 +6,28 @@
 
         <script>
 
-        	var figures = document.querySelectorAll("figure");
+        	var figures = document.querySelectorAll("figure"), i;
         	function clickSelect(e) {
-        		console.log(e);
+        		
 				for (i = 0; i < figures.length; ++i) {
 					figures[i].classList.remove("selected");
+					figures[i].classList.remove("tada");
 				}
-				var found = e.path.find(function(element) {
+
+				var path = e.composedPath();
+				
+				var found = path.find(function(element) {
 				  return element.tagName == "FIGURE";
 				});
 
-				found.classList.add("selected");
+				found.classList.add("selected")
+				found.classList.add('tada');
 
-				var audio = new Audio('/ass.wav');
+				var audioName = found.attributes['data-audio'].nodeValue;
+
+				var audio = new Audio('/' + audioName + '.wav');
 				audio.play();
 
-				console.log(found);
 			}
         	for (i = 0; i < figures.length; ++i) {
 			  figures[i].addEventListener("click", clickSelect, true);

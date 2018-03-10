@@ -110,20 +110,20 @@ img {
     }
 
 .wrapper figure {
-  background-color: #ccc;
+  background-color: #444;
   color: #fff;
   border-radius: 5px;
   padding: 20px;
   font-size: 150%;
 }
 
-/*.wrapper figure:nth-child(even) {
+.wrapper figure:nth-child(even) {
   background-color: #ccc;
   color: #000;
-}*/
+}
 
 .wrapper figure.selected {
-  background-color: #cdfc4e;
+  background-color: green;
   color: #000;
 }
 

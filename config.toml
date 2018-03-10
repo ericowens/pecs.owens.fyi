@@ -1,4 +1,4 @@
-baseURL = "http://pecs.owens.fyi/"
+baseURL = "http://192.168.2.202:1313/"
 languageCode = "en-us"
 title = "Minimal"
 theme = "minimal"

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Minimal</title>
+    <link>http://pecs.owens.fyi/post/</link>
+    <description>Recent content in Posts on Minimal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Mar 2018 19:33:19 -0600</lastBuildDate>
+    
+	<atom:link href="http://pecs.owens.fyi/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test</title>
+      <link>http://pecs.owens.fyi/post/test/</link>
+      <pubDate>Tue, 06 Mar 2018 19:33:19 -0600</pubDate>
+      
+      <guid>http://pecs.owens.fyi/post/test/</guid>
+      <description>Test
+  Steve Francia   </description>
+    </item>
+    
+  </channel>
+</rss>
